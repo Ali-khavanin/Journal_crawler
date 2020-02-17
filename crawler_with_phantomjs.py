@@ -3,12 +3,13 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from urllib.parse import urljoin
 import time
 
 driver = webdriver.PhantomJS(
     executable_path="C:/Users/khavaninzadeh/Desktop/phantomjs-2.1.1-windows/bin/phantomjs.exe")
 
-web_url = "http://www.ijgeophysics.ir/issue_12544_13525.html"
+web_url = "http://www.ijgeophysics.ir/"
 
 driver.get(web_url)
 driver.maximize_window()
@@ -39,6 +40,25 @@ for plus in driver.find_elements_by_xpath(
         i += 1
 
 soup = BeautifulSoup(driver.page_source, 'html.parser')
-out_source = open('out.txt', 'w')
-print(soup)
+# with open('PhJs_out.txt', 'w', encoding='utf8') as out:
+#     for line in soup.prettify():
+#         out.write(line)
+# print("the page source is now in the file !")
+# print(soup)
 # driver.implicitly_wait(time_to_wait=5)
+
+c = 0
+link_len = len(soup.findAll('div', {"class": "issue_dv"}))
+
+for ana in soup.findAll('div', {"class": "issue_dv"}):
+    print(ana)
+    c = c + 1
+    link = ana.findAll("a", href=True)
+
+print("all issues count =  ", c)
+print("web url is ... ", web_url)
+issue_link = link[0].get('href')
+print("issue link is ... ", issue_link)
+
+c_url = urljoin(web_url, issue_link)
+print(c_url)
