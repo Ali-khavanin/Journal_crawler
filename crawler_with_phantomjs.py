@@ -4,8 +4,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urljoin
+from urllib.parse import urlparse
+from urllib import request
+
 import time
 import requests
+from twisted.test.test_sslverify import ctx
 
 driver = webdriver.PhantomJS(
     executable_path="C:/Users/khavaninzadeh/Desktop/phantomjs-2.1.1-windows/bin/phantomjs.exe")
@@ -69,5 +73,12 @@ print(correct_url)
 #
 # w.save_xml(correct_url, '1_1.xml', './journals')
 
-req = requests.get('http://www.ijgeophysics.ir/?_action=xml&issue=3858', allow_redirects=True)
+
+parse_object = urlparse(web_url)
+base_url = "http://" + parse_object.netloc
+soup2 = BeautifulSoup(request.urlopen(correct_url), 'html.parser')
+xml_obj = soup2.findAll("a", attrs={"title": "XML"}, href=True)
+href = xml_obj[0].get('href')
+get_xml_url = urljoin(base_url, href)
+req = requests.get(get_xml_url, allow_redirects=True)  # idk what is context !!!!!! it imported a package to use it
 open('./journals/1_1.xml', 'wb').write(req.content)
