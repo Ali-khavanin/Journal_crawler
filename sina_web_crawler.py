@@ -11,7 +11,7 @@ import time
 # chrome_options.add_argument('--incognito')
 # chrome_options.add_argument('--headless')
 options = Options()
-options.add_argument('--headless')
+# options.add_argument('--headless')
 driver = webdriver.Chrome(executable_path='./chromedriver.exe')
 
 web_url = "http://www.ijgeophysics.ir/issue_12544_13525.html"
@@ -43,4 +43,12 @@ for plus in driver.find_elements_by_xpath(
         print("something went wrong ! in link number : ", i)
         print(exc)
         i += 1
+
+soup = BeautifulSoup(driver.page_source, 'html.parser')
+
+with open('Chr_out.txt', 'w', encoding='utf8') as out:
+    for line in soup.prettify():
+        out.write(line)
+print("the page source is now in the file !")
+print(soup.prettify())
 # driver.implicitly_wait(time_to_wait=5)
