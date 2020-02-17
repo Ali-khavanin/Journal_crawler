@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ArticleSet PUBLIC "-//NLM//DTD PubMed 2.7//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/in/PubMed.dtd">
+<ArticleSet>
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>تحلیل عددی تأثیر عوارض ساختاری بر انتشار موج تراکمی حاصل از انفجار در ماده بسپاری (پلیمری) پلکسی‌گلاس</ArticleTitle>
+<VernacularTitle>تحلیل عددی تأثیر عوارض ساختاری بر انتشار موج تراکمی حاصل از انفجار در ماده بسپاری (پلیمری) پلکسی‌گلاس</VernacularTitle>
+			<FirstPage>1</FirstPage>
+			<LastPage>11</LastPage>
+			<ELocationID EIdType="pii">34139</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>حسن</FirstName>
+					<LastName>بخشنده امنیه</LastName>
+<Affiliation>گروه معدن، دانشکده مهندسی، دانشگاه کاشان</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>عبدالرحیم</FirstName>
+					<LastName>جواهریان</LastName>
+<Affiliation>مؤسسه ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2006</Year>
+					<Month>08</Month>
+					<Day>14</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">در این مقاله تأثیر عوارض ساختاری قائم بر انتشار موج تراکمی حاصل از انفجار در ماده بسپاری پلکسی‌گلاس با استفاده از روش المان مجزا و برنامه رایانه‌ای UDEC تحلیل شده ‌است. موج ضربه‌ای ناشی از انفجار به صورت یک تپ (پالس) مثلثی ساده ‌شده که مشخصه انفجاری با فشار حداکثر 11 گیگاپاسکال است به دیواره یک چال انفجاری به قطر 08/5 میلی‌متر وارد شده‌ است. فشار دینامیکی اعمال شده روی دیواره چال انفجاری به صورت شعاعی و به طور یکنواخت بر آن اعمال شده است. مقادیر بیشینه جابه‌جایی افقی ذره، بیشینه سرعت ذره، تنش‌های اعمالی واقع در طرفین عارضه ساختاری، ضرایب عبور، انعکاس و جذب برای رفتار کشسان برآورد، و با نتایج حاصل از مطالعات آزمایشگاهی فوردیس و همکاران (1993) مقایسه شده ‌است. نتایج، انطباق خوبی را بین مقادیر حاصل از بررسی‌های آزمایشگاهی و تحلیل عددی نشان می‌دهد.</OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">تحلیل عددی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">انتشار موج تراکمی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">انفجار</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">پلکسی‌گلاس</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">روش المان مجزا</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34139_8828b3bf7902eca9d4ada09b95167074.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>تفسیر دوبعدی داده‌های VLF هوابرد</ArticleTitle>
+<VernacularTitle>تفسیر دوبعدی داده‌های VLF هوابرد</VernacularTitle>
+			<FirstPage>13</FirstPage>
+			<LastPage>19</LastPage>
+			<ELocationID EIdType="pii">34140</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>بهروز</FirstName>
+					<LastName>اسکوئی</LastName>
+<Affiliation>مؤسسة ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>احمد علی</FirstName>
+					<LastName>بهروزمند</LastName>
+<Affiliation>مؤسسة ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2006</Year>
+					<Month>08</Month>
+					<Day>14</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">داده‌های VLF اثرات دو‌بعدی قابل ملاحظه را نشان می‌دهند. وارون‌سازی دو‌بعدی مزایای متعددی را هنگامی که روی داده‌های پروفیل‌های VLF اعمال می‌شوند، بیان می‌کند. نخست آن‌که برآوردی کمی از هدایت‌ویژه‌های سنگ کف به دور از رساناها فراهم می‌کند. دوم این که، ارتباط بین قسمت‌های حقیقی و مجازی بردار تیپر، اطلاعاتی را در مورد عمق رساناها فراهم می‌کند. در این مقاله، یک مدل مصنوعی از یک همبری عمودی و یک پروفیل داده‌های VLF هوابرد مورد بحث قرار گرفته است.</OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">وارون‌سازی دو‌بعدی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">تیپر</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">هدایت‌ویژه</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34140_c45e3c297de69260793a92b05db0f8c3.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>تعیین وابستگی بسامدی کاهندگی امواج P و S در ناحیه مشهد</ArticleTitle>
+<VernacularTitle>تعیین وابستگی بسامدی کاهندگی امواج P و S در ناحیه مشهد</VernacularTitle>
+			<FirstPage>21</FirstPage>
+			<LastPage>35</LastPage>
+			<ELocationID EIdType="pii">34144</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>غلامرضا</FirstName>
+					<LastName>نوروزی</LastName>
+<Affiliation>گروه مهندسی معدن، دانشگاه بیرجند</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>محسن</FirstName>
+					<LastName>غفوری آشتیانی</LastName>
+<Affiliation>پژوهشگاه بین المللی زلزله شناسی و مهندسی زلزله</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>غلام</FirstName>
+					<LastName>جوان دولوئی</LastName>
+<Affiliation>2 پژوهشگاه بین المللی زلزله شناسی و مهندسی زلزله</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>محمد</FirstName>
+					<LastName>مختاری</LastName>
+<Affiliation>پژوهشگاه بین المللی زلزله شناسی و مهندسی زلزله</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2007</Year>
+					<Month>02</Month>
+					<Day>08</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">در این بررسی، وابستگی بسامدی امواج P و S در قالب  و  برای ناحیه مشهد محاسبه شده است. داده‌های محلی مورد استفاده با استفاده از شبکه ایستگاه‌های لرزه‌نگاری موقتی که به همین منظور نصب شده بودند، بدست آمده‌اند و از روش کدای نرمالیزه شده توسعه یافته برای تجزیه و تحلیل و به دست آوردن روابط کاهندگی استفاده شده است. برآوردها نشان دهنده وابستگی بسامدی کاهندگی هر یک از امواج P و S در ناحیه مشهد و بگونه‌ای است که  از 005034/0±012580/0 در 5/1 هرتز تا 000414/0±000863/0 در 0/24 هرتز کاهش می‌یابد. همچنین  از 004359/0±008019/0 در 5/1 هرتز تا 000314/0±000352/0 در 0/24 هرتز کاهش می‌یابد. با استفاده از روش‌های رگرسیونی، مقادیر  و  به صورت زیر و برحسب توابعی از بسامد به دست آمده‌اند:
+(وابستگی بسامدی کاهندگی موج P در ناحیه مشهد)       
+(وابستگی بسامدی کاهندگی موج S در ناحیه مشهد)       
+&lt;strong&gt; &lt;/strong&gt;
+ </OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">ناحیه مشهد</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">کاهندگی امواج P و S</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">ضریب کیفیت</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">وابستگی بسامدی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">کدای نرمالیزه شده توسعه یافته</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34144_9cfed5d077b76b754a76d507f428875e.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>استفاده از رخساره‌های لرزه‌ای در توصیف یکی از مخازن نفتی ایران</ArticleTitle>
+<VernacularTitle>استفاده از رخساره‌های لرزه‌ای در توصیف یکی از مخازن نفتی ایران</VernacularTitle>
+			<FirstPage>37</FirstPage>
+			<LastPage>49</LastPage>
+			<ELocationID EIdType="pii">34145</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>علی</FirstName>
+					<LastName>عدالت</LastName>
+<Affiliation>مؤسسة ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>حمیدرضا</FirstName>
+					<LastName>سیاهکوهی</LastName>
+<Affiliation>مؤسسة ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2006</Year>
+					<Month>12</Month>
+					<Day>19</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">تحلیل رخساره‌های لرزه‌ای، فن قدرتمندی برای تعیین تغییرات خصوصیات لرزه‌ای تریس‌ها در محدودة مخزن و مرتبط کردن آنها با تغییرات خصوصیات مخزنی است. تعیین این خصوصیات از مخزن جهت ساخت مدل مخزن و برنامه‌ریزی عملیات تولید، حیاتی است. در این بررسی سعی در تجمیع داده‌های لرزه‌ای سه‌بعدی و نگاره‌های تخلخل موثر برای برآورد تغییرات جانبی تخلخل در مخزن میشریف (یکی از مخازن نفتی واقع در خلیج فارس) دارد. تحلیل رخساره‌های لرزه‌ای به دو روش با نظارت و بدون نظارت در محدودة مخزن صورت گرفته است. نتایج این دو روش همخوانی خوبی دارند و همچنین با داده‌های پتروفیزیکی چاه‌ها و نقشة تخلخل میانگین، که در مطالعات قبلی به دست آمده است، سازگارند. این مطالعه امکان تعریف محدوده‌هایی با مقادیر تخلخل میانگین زیاد و همچنین تخلخل میانگین کم را فراهم می‌آورد. تحلیل به روش بدون نظارت نه تنها نتایج روش تحلیل با نظارت را تایید می‌کند، بلکه جزئیات بیشتری از تغییرات جانبی رخساره‌های لرزه‌ای را به دست می‌دهد. مناطق با تخلخل میانگین کم بیشتر در بخش جنوبی منطقه مورد بررسی و مناطق با تخلخل میانگین زیاد، بیشتر در بخش شمالی و غربی منطقه قرار گرفته‌اند.</OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">رخساره‌های لرزه‌ای</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">تحلیل بدون نظارت</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">تحلیل با نظارت</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">توصیف مخزن</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34145_2f02498dc7fea03de1e69d865352e3ac.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>مقایسه ساختار دینامیکی پدیده بلاکینگ با مودون‌ها در شاره‌های ژئوفیزیکی</ArticleTitle>
+<VernacularTitle>مقایسه ساختار دینامیکی پدیده بلاکینگ با مودون‌ها در شاره‌های ژئوفیزیکی</VernacularTitle>
+			<FirstPage>51</FirstPage>
+			<LastPage>59</LastPage>
+			<ELocationID EIdType="pii">34146</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>روح ا...</FirstName>
+					<LastName>آزاد</LastName>
+<Affiliation>مؤسسه ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>فرهنگ</FirstName>
+					<LastName>احمدی گیوی</LastName>
+<Affiliation>مؤسسه ژئوفیزیک، دانشگاه تهران</Affiliation>
+<Identifier Source="ORCID">0000-0002-9487-4862</Identifier>
+
+</Author>
+<Author>
+					<FirstName>علی‌رضا</FirstName>
+					<LastName>محب الحجه</LastName>
+<Affiliation>مؤسسه ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2007</Year>
+					<Month>02</Month>
+					<Day>18</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">در این مقاله، ضمن معرفی اساس فیزیکی ـ ریاضی جواب‌های مودونی برای معادله تاوایی پتانسیلی زمین‌گردوار در شاره‌های ژئوفیزیکی، ارتباط آنها با بلاکینگ بررسی می‌شود. برای این کار، ابتدا یک رویداد بلاکینگ که در بازه زمانی هشتم تا دوازدهم آذر ماه 1383 اتفاق افتاده است و ساختاری دوقطبی شبیه به مودون فشارورد هم ارز دارد، انتخاب شد. سپس، نقشه‌های هم‌دیدی مربوطه در سطوح فشاری متفاوت بررسی و تاوایی پتانسیلی زمین‌گردوار (q) و تابع جریان (ψ) در سطح 300 هکتوپاسکال محاسبه شده است.
+مشاهده می‌شود که این بلاکینگ با ظهور یک مرکز بریده از مقادیر کم q در نقشه‌های تاوایی پتانسیلی زمین‌گردوار در سطح 300 هکتوپاسکال همراه است. این مرکز بریده درست در منطقه پرارتفاع بلاکینگ قرار دارد. به علاوه، نمودارq  برحسب ψ برای نواحی بلاک شده و بلاک نشده، ساختار دینامیکی متفاوت و مجزای ناحیه بلاکینگ از محیط اطرافش را نشان می‌دهد. مقایسه این نمودار مشاهداتی با نمودار نظری آن، حاکی از شباهت ساختار این بلاکینگ با یک مودون فشارورد هم ارز در یک جریان غربی است.
+ 
+ </OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">بلاکینگ</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">تاوایی پتانسیلی زمین‌گردوار</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">مودون</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">فشارورد هم ارز</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34146_56f356bfa63c4cda3f5f07c99684a286.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>تعیین عمق سنگ بستر با استفاده از روش گرانی‌سنجی در منطقه جنوب زاگرس</ArticleTitle>
+<VernacularTitle>تعیین عمق سنگ بستر با استفاده از روش گرانی‌سنجی در منطقه جنوب زاگرس</VernacularTitle>
+			<FirstPage>61</FirstPage>
+			<LastPage>69</LastPage>
+			<ELocationID EIdType="pii">34147</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>آرش</FirstName>
+					<LastName>متشرعی</LastName>
+<Affiliation>دانشگاه آزاد، واحد نوشهر و چالوس</Affiliation>
+
+</Author>
+<Author>
+					<FirstName>حسین</FirstName>
+					<LastName>زمردیان</LastName>
+<Affiliation>دانشگاه آزاد، واحد علوم و تحقیقات،</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2006</Year>
+					<Month>11</Month>
+					<Day>19</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; mso-ascii-font-family: &#039;IPT.Nazanin&#039;; mso-hansi-font-family: &#039;IPT.Nazanin&#039;;&quot; lang=&quot;FA&quot;&gt;گرانی‌سنجی روش موثر و نسبتا ارزانی برای برآورد ضخامت حوزه رسوبی و عمق سنگ بستر است. در این پژوهش با استفاده از داده&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; text-shadow: auto;&quot; lang=&quot;FA&quot;&gt;‌&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; mso-ascii-font-family: &#039;IPT.Nazanin&#039;; mso-hansi-font-family: &#039;IPT.Nazanin&#039;;&quot; lang=&quot;FA&quot;&gt;های گرانی موجود در جنوب زاگرس و روش وارون تکراری صفحه نامحدود &lt;/span&gt;&lt;span style=&quot;font-size: 8.0pt; mso-bidi-font-family: &#039;B Mitra&#039;;&quot; dir=&quot;LTR&quot;&gt;(Jachens, et al., 1990)&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; mso-ascii-font-family: &#039;IPT.Nazanin&#039;; mso-hansi-font-family: &#039;IPT.Nazanin&#039;;&quot; lang=&quot;FA&quot;&gt; ضخامت حوزه رسوبی که روی یک ناودیس که خود مابین دو تاقدیس قرار گرفته برآورد شده است. برای آزمایش صحت و کارآمدی روش داده&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; text-shadow: auto;&quot; lang=&quot;FA&quot;&gt;‌&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; mso-ascii-font-family: &#039;IPT.Nazanin&#039;; mso-hansi-font-family: &#039;IPT.Nazanin&#039;;&quot; lang=&quot;FA&quot;&gt;های مصنوعی در حالت دوبعدی و سه‌بعدی مورد آزمایش قرار گرفته است. برای برآورد چگالی و ناحیه&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; text-shadow: auto;&quot; lang=&quot;FA&quot;&gt;‌&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; mso-ascii-font-family: &#039;IPT.Nazanin&#039;; mso-hansi-font-family: &#039;IPT.Nazanin&#039;;&quot; lang=&quot;FA&quot;&gt;بندی منطقه به لحاظ چگالی از تحلیل مقاطع نتلتون استفاده شده است. عمق برآورد شده با این روش به لحاظ زمین&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; text-shadow: auto;&quot; lang=&quot;FA&quot;&gt;‌&lt;/span&gt;&lt;span style=&quot;font-size: 10.0pt; font-family: &#039;B Mitra&#039;; mso-ascii-font-family: &#039;IPT.Nazanin&#039;; mso-hansi-font-family: &#039;IPT.Nazanin&#039;;&quot; lang=&quot;FA&quot;&gt;شناسی و ژئومورفولوژی تا حدی مورد تایید است.&lt;/span&gt;</OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">گرانی‌سنجی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">عمق سنگ بستر</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34147_058b3bb46e399de07165e5d71c2b9ed6.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>شبیه‌سازی بیراهی مکانیابی زمین‌لرزه‌ها و کاربرد آن در شبکه لرزه‌نگاری تهران</ArticleTitle>
+<VernacularTitle>شبیه‌سازی بیراهی مکانیابی زمین‌لرزه‌ها و کاربرد آن در شبکه لرزه‌نگاری تهران</VernacularTitle>
+			<FirstPage>71</FirstPage>
+			<LastPage>80</LastPage>
+			<ELocationID EIdType="pii">34149</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>محمد</FirstName>
+					<LastName>اشتری جعفری</LastName>
+<Affiliation>موسسه ژئوفیزیک، دانشگاه تهران</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2006</Year>
+					<Month>10</Month>
+					<Day>22</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">مکانیابی لرزه‌ای با برگردان خطی یا غیر خطی زمان‌های رسید، پارامترهای زمین‌لرزه را محاسبه می‌کند. مکان یافته شده، اغلب راه حلی است که بیشترین همخوانی بین داده‌های محاسباتی و داده‌های اندازه‌گیری شده را ایجاد می‌کند. بیراهی در مکانیابی لرزه‌ای را بیشتر می‌توان ناشی از: بیراهی در خواندن موج‌های لرزه‌ای، تشخیص نادرست موجهای لرزه‌ای و بیراهی در مدل محاسبه زمان رسید دانست. مکان نادرست محاسبه شده تحت تاثیر این عامل‌ها، خود تحت تاثیر تعداد و پراکندگی مکانی (پیکربندی) ایستگاه‌های نگارنده قرار دارد. در این مقاله با به‌دست آوردن رابطه‌هایی، بیراهی مورد انتظار برای شبکه لرزه‌نگاری تهران با دو مدل سرعت متفاوت، شبیه‌سازی شده است. محاسبه‌ها نشان می‌دهند که کارآیی شبکه در امتداد طول آن بهتر از عرض و بیراهی مورد انتظار فاصله رومرکزی زیاد به‌نظر می‌رسد. با مقایسه دو مدل به‌کار رفته به‌نظر می‌رسد که در داخل شبکه دو مدل تقریباً معادل اما برای رویدادهای خارج از شبکه، مدل دوم اندکی بهتر عمل می‌کند. بنابراین پیشنهاد می‌شود تا در هنگام تجدید نظرهای آتی در پیکربندی شبکه لرزه‌نگاری تهران یا سایر شبکه‌های موجود و در دست راه‌اندازی، این روش و نتیجه‌های ناشی از آن مورد توجه قرار گیرد.
+&lt;strong&gt; &lt;/strong&gt;
+ </OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">بیراهی مورد انتظار</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">شبیه‌سازی بیراهی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">بیراهی مکانیابی</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">پیکربندی شبکه</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">زمان رخداد</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34149_792a6b0a7d9043835e890485d87d5e77.pdf</ArchiveCopySource>
+</Article>
+
+<Article>
+<Journal>
+				<PublisherName>انجمن ژئوفیزیک ایران</PublisherName>
+				<JournalTitle>مجله ژئوفیزیک ایران</JournalTitle>
+				<Issn>2008-336</Issn>
+				<Volume>1</Volume>
+				<Issue>1</Issue>
+				<PubDate PubStatus="epublish">
+					<Year>1386</Year>
+					<Month>12</Month>
+					<Day>01</Day>
+				</PubDate>
+			</Journal>
+<ArticleTitle>بررسی ساختار شکستگی سراب قنبر در جنوب شهر کرمانشاه با استفاده از روش رادار</ArticleTitle>
+<VernacularTitle>بررسی ساختار شکستگی سراب قنبر در جنوب شهر کرمانشاه با استفاده از روش رادار</VernacularTitle>
+			<FirstPage>81</FirstPage>
+			<LastPage>89</LastPage>
+			<ELocationID EIdType="pii">34150</ELocationID>
+			
+			
+			<Language>FA</Language>
+<AuthorList>
+<Author>
+					<FirstName>محسن</FirstName>
+					<LastName>اویسی موخر</LastName>
+<Affiliation>پژوهشکده ژئوفیزیک، دانشگاه رازی، کرمانشاه</Affiliation>
+
+</Author>
+</AuthorList>
+				<PublicationType>Journal Article</PublicationType>
+			<History>
+				<PubDate PubStatus="received">
+					<Year>2007</Year>
+					<Month>01</Month>
+					<Day>07</Day>
+				</PubDate>
+			</History>
+		<Abstract></Abstract>
+			<OtherAbstract Language="FA">روش رادار (GPR) یکی از روش‌های الکترومغناطیسی برای اکتشاف لایه‌های کم‌عمق زیرزمینی است. منطقه سراب قنبر واقع در جنوب شهر کرمانشاه یکی از مناطق زاگرس رورانده است که آهک‌ها با سنین متفاوت در مجاورت تشکیلات رسوبی رادیولاریت‌ها واقع شده‌اند. با توجه به شکستگی آهک‌ها و نفوذ ناپذیری رادیولاریت‌ها، مطالعه رادیولاریت‌ها از نظر ساختاری با اهمیت است زیرا رادیولاریت‌ها مانند سدی در مقابل جریان آب ناشی از آهک‌ها عمل می‌کنند. با استفاده از آنتن رادار غیر پوششی 100 مگاهرتز ناحیه کوچکی از رادیولاریت‌ها که دارای شکستگی‌اند مورد کاوش قرار گرفت. عمق نفوذ امواج 5/1 متر و سرعت آنها 069/0 متر بر نانو ثانیه به‌دست آمد. رادار نگاشت‌ها ابتدای شکستگی را در فاصله افقی 8 متری از اول پروفیل نشان می‌دهند. تغییر شکل لایه‌ها در فاصله‌های متفاوت تا عمق 1 متر دیده می‌شود. وجود یک تاقدیس در فاصله 22 متری از اول پروفیل‌ها در بعضی از رادار نگاشت‌ها مشاهده شد که با مشاهدات صحرایی انطباق دارد.
+ </OtherAbstract>
+		<ObjectList>
+			<Object Type="keyword">
+			<Param Name="value">روش رادار</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">روش کم عمق</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">رادیولاریت‌ها</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">شکستگی‌ها</Param>
+			</Object>
+			<Object Type="keyword">
+			<Param Name="value">تاقدیس</Param>
+			</Object>
+		</ObjectList>
+<ArchiveCopySource DocType="pdf">http://www.ijgeophysics.ir/article_34150_96d1675dcbc5f534720347888d68a663.pdf</ArchiveCopySource>
+</Article>
+</ArticleSet>

@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urljoin
 import time
+import requests
 
 driver = webdriver.PhantomJS(
     executable_path="C:/Users/khavaninzadeh/Desktop/phantomjs-2.1.1-windows/bin/phantomjs.exe")
@@ -60,5 +61,13 @@ print("web url is ... ", web_url)
 issue_link = link[0].get('href')
 print("issue link is ... ", issue_link)
 
-c_url = urljoin(web_url, issue_link)
-print(c_url)
+correct_url = urljoin(web_url, issue_link)
+print(correct_url)
+
+# w = Get_xml(correct_url, '1_1', './journals')
+# print("going to save the xml file ...")
+#
+# w.save_xml(correct_url, '1_1.xml', './journals')
+
+req = requests.get('http://www.ijgeophysics.ir/?_action=xml&issue=3858', allow_redirects=True)
+open('./journals/1_1.xml', 'wb').write(req.content)
