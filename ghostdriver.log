@@ -1,12 +1,12 @@
-[INFO  - 2020-02-15T12:36:46.768Z] GhostDriver - Main - running on port 49795
-[INFO  - 2020-02-15T12:36:48.865Z] Session [d5a6d500-4fef-11ea-9001-617caa6c533c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2020-02-15T12:36:48.865Z] Session [d5a6d500-4fef-11ea-9001-617caa6c533c] - page.customHeaders:  - {}
-[INFO  - 2020-02-15T12:36:48.866Z] Session [d5a6d500-4fef-11ea-9001-617caa6c533c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2020-02-15T12:36:48.866Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d5a6d500-4fef-11ea-9001-617caa6c533c
-[ERROR - 2020-02-15T12:36:53.242Z] Session [d5a6d500-4fef-11ea-9001-617caa6c533c] - page.onError - msg: TypeError: undefined is not an object (evaluating 'document.getElementsByTagName("table")[0].setAttribute')
+[INFO  - 2020-02-19T09:12:59.809Z] GhostDriver - Main - running on port 57490
+[INFO  - 2020-02-19T09:13:01.935Z] Session [077cd510-52f8-11ea-ad1c-c787174a951c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-02-19T09:13:01.935Z] Session [077cd510-52f8-11ea-ad1c-c787174a951c] - page.customHeaders:  - {}
+[INFO  - 2020-02-19T09:13:01.935Z] Session [077cd510-52f8-11ea-ad1c-c787174a951c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-02-19T09:13:01.935Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 077cd510-52f8-11ea-ad1c-c787174a951c
+[ERROR - 2020-02-19T09:13:04.785Z] Session [077cd510-52f8-11ea-ad1c-c787174a951c] - page.onError - msg: TypeError: undefined is not an object (evaluating 'document.getElementsByTagName("table")[0].setAttribute')
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2020-02-15T12:36:53.242Z] Session [d5a6d500-4fef-11ea-9001-617caa6c533c] - page.onError - stack:
-  global code (http://www.ijgeophysics.ir/issue_12544_13525.html:451)
+[ERROR - 2020-02-19T09:13:04.785Z] Session [077cd510-52f8-11ea-ad1c-c787174a951c] - page.onError - stack:
+  global code (http://www.ijgeophysics.ir/:292)
 
   phantomjs://platform/console++.js:263 in error

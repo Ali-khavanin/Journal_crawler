@@ -58,11 +58,11 @@ link_len = len(soup.findAll('div', {"class": "issue_dv"}))
 for ana in soup.findAll('div', {"class": "issue_dv"}):
     print(ana)
     c = c + 1
-    link = ana.findAll("a", href=True)
+    links = ana.findAll("a", href=True)
 
 print("all issues count =  ", c)
 print("web url is ... ", web_url)
-issue_link = link[0].get('href')
+issue_link = links[0].get('href')
 print("issue link is ... ", issue_link)
 
 correct_url = urljoin(web_url, issue_link)
@@ -73,12 +73,45 @@ print(correct_url)
 #
 # w.save_xml(correct_url, '1_1.xml', './journals')
 
-
+name = ""
+path_to_save = "./All_sinawebs/"
+name = "Sweb_Volume_"
+final_save_loc = ""
 parse_object = urlparse(web_url)
 base_url = "http://" + parse_object.netloc
 soup2 = BeautifulSoup(request.urlopen(correct_url), 'html.parser')
-xml_obj = soup2.findAll("a", attrs={"title": "XML"}, href=True)
-href = xml_obj[0].get('href')
-get_xml_url = urljoin(base_url, href)
-req = requests.get(get_xml_url, allow_redirects=True)  # idk what is context !!!!!! it imported a package to use it
-open('./journals/1_1.xml', 'wb').write(req.content)
+issue_xml_objects = soup2.findAll("a", attrs={"title": "XML"}, href=True)
+# href = issue_xml_objects[0].get('href')
+# get_xml_url = urljoin(base_url, href)
+# print(get_xml_url)
+# req = requests.get(get_xml_url, allow_redirects=True)  # idk what is context !!!!!! it imported a package to use it
+# open('./journals/1_1.xml', 'wb').write(req.content)
+volume_number = 0
+issue_number = 1
+for link in links:
+    time.sleep(10)
+    volume_number += 1
+    issue_number = 1
+    print("Going to main page with link = ", link)
+    for issue_xml_link in issue_xml_objects:
+        time.sleep(5)
+        print("going to download xml file with link = ", issue_link)
+        href = issue_xml_link.get('href')
+        get_xml_url = urljoin(base_url, href)
+        print("Going to link => ", get_xml_url)
+
+        # name += str(list.index(links, link, 0, -1) + 1) + "_" + str(
+        #     list.index(issue_xml_objects, issue_xml_link, 0, -1)) + ".xml"
+
+        name = name + str(volume_number) + "_" + "Issue_" + str(issue_number) + ".xml"
+
+        print("the name of the xml file would be ", name)
+        req = requests.get(get_xml_url, allow_redirects=True)
+        print("request is sent ...")
+        path_to_save.join(name)
+        with open(path_to_save, 'wb') as download_loc:
+            download_loc.write(req.content)
+        print("File ", name, " is saved !", "\n ______________________________________________________________")
+        issue_number += 1
+    print("the volume number ", str(volume_number), " is completely downloaded !",
+          "\n ************************************************************************************")
