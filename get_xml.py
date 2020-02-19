@@ -63,7 +63,7 @@ class Get_xml(object):
                 file.close()
             print("writing xml file is Done: " + filename)
         else:
-            print("xml file is exist: " + filename)
+            print("xml file does  exist: " + filename)
 
     def encode_xml(self, string, encoding='utf-8'):
         string = string.encode(encoding)
