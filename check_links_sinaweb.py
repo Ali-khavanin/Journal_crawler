@@ -12,3 +12,5 @@ all_links = driver.find_element_by_xpath('/html/body/div[4]/div/section/div/div[
 
 
 all_links.click()
+
+
