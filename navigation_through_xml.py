@@ -8,7 +8,7 @@ print(root.tag)
 print(root.attrib)
 
 for Article in root.findall('.//Article'):
-    print(Article.find("ArchiveCopySource").text+ "----" + Article.find('Journal/Volume').text)
+    print(Article.find("ArchiveCopySource").text + "----" + Article.find('Journal/Volume').text
+          + '---------' + Article.find('Journal/Issue').text)
 
 # gets all the download links and volumes
-
