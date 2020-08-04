@@ -10,10 +10,5 @@ print(root.attrib)
 for Article in root.findall('.//Article'):
     print(Article.find("ArchiveCopySource").text+ "----" + Article.find('Journal/Volume').text)
 
-# gets all the download links
-
-for volume in root:
-    for v in volume.iter('Journal'):
-        print(v.attrib)
-
+# gets all the download links and volumes
 
