@@ -26,6 +26,8 @@ for element in root.findall('.//Article'):
     volume = element.find('Journal/Volume').text
     issue = element.find('Journal/Issue').text
     abstract = element.find('OtherAbstract').text
+    title = element.find('ArticleTitle').text
+    year = element.find('Journal/PubDate/Year').text
     for author in element.findall('./AuthorList//Author'):
         print(author.find('FirstName').text + '   '
               + author.find('LastName').text)
@@ -33,8 +35,11 @@ for element in root.findall('.//Article'):
     print(link_to_download + "----" + volume.zfill(3)
           + '---------' + issue.zfill(3))
 
-    articles.append(Article(link_to_download, volume, issue, str(number), get_Authors(element)))
+    articles.append(Article(link_to_download, volume, issue, str(number), get_Authors(element) , abstract
+                            , title,year))
 
 # print(articles[0].link_to_download)
 # gets all the download links and volumes
 # print(articles[0].Authors[0].FirstName)
+# print(articles[4].title)
+# print(articles[0].year)
