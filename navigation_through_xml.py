@@ -37,9 +37,10 @@ for element in root.findall('.//Article'):
 
     articles.append(Article(link_to_download, volume, issue, str(number), get_Authors(element) , abstract
                             , title,year))
-
+    number += 1
 # print(articles[0].link_to_download)
 # gets all the download links and volumes
 # print(articles[0].Authors[0].FirstName)
 # print(articles[4].title)
 # print(articles[0].year)
+# print(articles[2].number)
