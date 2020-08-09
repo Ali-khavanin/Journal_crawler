@@ -12,13 +12,13 @@ if not os.path.isdir('./0'):
     os.mkdir('./0')
 pth = './0/'
 for article in articles:
-    nameOfTheFile = '0' + article.JournalCode + article.volume + article.number + '.pdf'
+    nameOfTheFile = '0' + article.JournalCode + article.volume+ article.issue + article.number + '.pdf'
     pth = './0/'
     if not os.path.isdir(pth + article.JournalCode):
         os.mkdir(pth + article.JournalCode)
         print("directory ", pth, " is created !")
     pth = pth + article.JournalCode + '/'
-    print("first part of path is ", pth)
+    print("first part of path is ", pth + article.volume)
     if not os.path.isdir(pth + article.volume):
         os.mkdir(pth + article.volume)
         print("directory ", pth + article.volume, " is created")
@@ -28,3 +28,4 @@ for article in articles:
 
     download_to(article.link_to_download, pth + nameOfTheFile)
     print("file ", nameOfTheFile, " from ", article.link_to_download, " is downloaded !")
+    print("********************************************************************************")
