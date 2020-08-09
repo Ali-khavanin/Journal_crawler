@@ -1,3 +1,6 @@
+from set_journlPaper_code import journalPapers_code
+
+
 class Article:
     year = ""
     link_to_download = ""
@@ -8,8 +11,10 @@ class Article:
     Authors = []
     number = ""
     code = ""
+    JournalCode = "1700"
+    SorY = "1"
 
-    def __init__(self, ltd, v, i, c, auts , abs , ti , y):
+    def __init__(self, ltd, v, i, c, auts, abs, ti, y):
         self.link_to_download = ltd
         self.volume = v
         self.issue = i
@@ -19,11 +24,16 @@ class Article:
         self.title = ti
         self.year = y
 
+    def get_code(self):
+        self.code = self.SorY.join('1700').join(self.volume).join(self.number)
+        return self.code
+
 
 class Author:
     Affiliation = ""
     FirstName = ""
     LastName = ""
+
     def __init__(self, f, l, a):
         self.FirstName = f
         self.LastName = l
