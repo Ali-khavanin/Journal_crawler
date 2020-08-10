@@ -19,7 +19,7 @@ file = open('allSinaWebs.txt', 'r')
 allURLS = file.readlines()
 for url in allURLS:
     # print(url)
-    coder_to_string = str(coder).zfill(4)
+    coder_to_string = str(coder).zfill(8)
     journalPapers_code[coder_to_string] = url.rstrip('\n')
     coder += 1
 

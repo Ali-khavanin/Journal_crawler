@@ -10,6 +10,7 @@ import os
 def get_Authors(path):
     Authors = []
     for author in path.findall('./AuthorList//Author'):
+
         Authors.append(
             Author(author.find('FirstName').text, author.find('LastName').text, author.find('Affiliation').text))
     return Authors
