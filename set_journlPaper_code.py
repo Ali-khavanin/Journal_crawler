@@ -1,3 +1,6 @@
+
+from save_load_pickle import save_obj
+
 journalPapers_code: dict = {}
 
 
@@ -20,5 +23,13 @@ for url in allURLS:
     journalPapers_code[coder_to_string] = url.rstrip('\n')
     coder += 1
 
-print(type(journalPapers_code))
-print(get_key('http://www.ijgeophysics.ir'))
+print("going to save the dict ...")
+save_obj(journalPapers_code, './journalPapers.pkl')
+print("dict is saved")
+# print(type(journalPapers_code))
+# print(get_key('http://ma.iaumajlesi.ac.ir'))
+
+# codes: dict = load_obj('./journalPapers.pkl')
+#
+# print(list(codes.items())[1200])
+
