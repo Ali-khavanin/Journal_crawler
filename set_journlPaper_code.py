@@ -6,10 +6,6 @@ journalPapers_code: dict = {}
 
 # print("{:04d}".format(45))
 
-def get_key(val):
-    for key, value in journalPapers_code.items():
-        if val == value:
-            return key
 
 
 coder: int = 1
