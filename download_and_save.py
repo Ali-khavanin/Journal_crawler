@@ -3,9 +3,12 @@ import os
 from navigation_through_xml import articles
 import time
 
+lst_missed = []
+
 
 def download_to(url: str, path: str):
     time.sleep(10)
+
     try:
         with open(path, 'wb') as pdfFile:
             pdfFile.write(requests.get(url).content)
@@ -22,7 +25,8 @@ if not os.path.isdir('./0'):
 pth = './0/'
 for article in articles:
 
-    nameOfTheFile = '0' + article.JournalCode.zfill(8) + article.volume.zfill(4) + article.issue.zfill(3) + article.number.zfill(2) + '.pdf'
+    nameOfTheFile = '0' + article.JournalCode.zfill(8) + article.volume.zfill(4) + article.issue.zfill(
+        3) + article.number.zfill(2) + '.pdf'
     pth = './0/'
     if not os.path.isdir(pth + article.JournalCode):
         os.mkdir(pth + article.JournalCode)
@@ -35,7 +39,21 @@ for article in articles:
     pth = pth + article.volume + '/'
     # pth = pth + article.number + '.pdf'
     print("the name of the file weill be ", nameOfTheFile)
+    article.code = nameOfTheFile
     time.sleep(10)
-    download_to(article.link_to_download, pth + nameOfTheFile)
+    try:
+        download_to(article.link_to_download, pth + nameOfTheFile)
+    except:
+        lst_missed.append(article)
     print("file ", nameOfTheFile, " from ", article.link_to_download, " is downloaded !")
     print("********************************************************************************")
+
+print("_______________________________________________________________________________________")
+print("Download ended !")
+print("number of missed articles = ", lst_missed.__len__())
+if lst_missed.__len__() != 0:
+    for mis in lst_missed:
+        print("url = ", mis.link_to_download)
+        print("article code is -> ", mis.code)
+else:
+    print("nothing is missed !")
