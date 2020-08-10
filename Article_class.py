@@ -11,11 +11,12 @@ class Article:
     Authors = []
     number = ""
     code = ""
-    JournalCode = "1700"
-    SorY = "1"
+    JournalCode = ""
+    SorY = ""
 
-    def __init__(self, ltd, v, i, c, auts, abs, ti, y):
+    def __init__(self, ltd, jc, v, i, c, auts, abs, ti, y):
         self.link_to_download = ltd
+        self.JournalCode = jc
         self.volume = v
         self.issue = i
         self.number = c
