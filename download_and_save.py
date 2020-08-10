@@ -20,40 +20,40 @@ def download_to(url: str, path: str):
         print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
 
-if not os.path.isdir('./0'):
-    os.mkdir('./0')
-pth = './0/'
-for article in articles:
-
-    nameOfTheFile = '0' + article.JournalCode.zfill(8) + article.volume.zfill(4) + article.issue.zfill(
-        3) + article.number.zfill(2) + '.pdf'
+def download_and_save_articls():
+    if not os.path.isdir('./0'):
+        os.mkdir('./0')
     pth = './0/'
-    if not os.path.isdir(pth + article.JournalCode):
-        os.mkdir(pth + article.JournalCode)
-        print("directory ", pth, " is created !")
-    pth = pth + article.JournalCode + '/'
-    print("first part of path is ", pth + article.volume)
-    if not os.path.isdir(pth + article.volume):
-        os.mkdir(pth + article.volume)
-        print("directory ", pth + article.volume, " is created")
-    pth = pth + article.volume + '/'
-    # pth = pth + article.number + '.pdf'
-    print("the name of the file weill be ", nameOfTheFile)
-    article.code = nameOfTheFile
-    time.sleep(10)
-    try:
-        download_to(article.link_to_download, pth + nameOfTheFile)
-    except:
-        lst_missed.append(article)
-    print("file ", nameOfTheFile, " from ", article.link_to_download, " is downloaded !")
-    print("********************************************************************************")
+    for article in articles:
 
-print("_______________________________________________________________________________________")
-print("Download ended !")
-print("number of missed articles = ", lst_missed.__len__())
-if lst_missed.__len__() != 0:
-    for mis in lst_missed:
-        print("url = ", mis.link_to_download)
-        print("article code is -> ", mis.code)
-else:
-    print("nothing is missed !")
+        nameOfTheFile = '0' + article.JournalCode + article.volume + article.issue + article.number + '.pdf'
+        pth = './0/'
+        if not os.path.isdir(pth + article.JournalCode):
+            os.mkdir(pth + article.JournalCode)
+            print("directory ", pth, " is created !")
+        pth = pth + article.JournalCode + '/'
+        print("first part of path is ", pth + article.volume)
+        if not os.path.isdir(pth + article.volume):
+            os.mkdir(pth + article.volume)
+            print("directory ", pth + article.volume, " is created")
+        pth = pth + article.volume + '/'
+        # pth = pth + article.number + '.pdf'
+        print("the name of the file weill be ", nameOfTheFile)
+        article.code = nameOfTheFile
+        time.sleep(10)
+        try:
+            download_to(article.link_to_download, pth + nameOfTheFile)
+        except:
+            lst_missed.append(article)
+        print("file ", nameOfTheFile, " from ", article.link_to_download, " is downloaded !")
+        print("********************************************************************************")
+
+    print("_______________________________________________________________________________________")
+    print("Download ended !")
+    print("number of missed articles = ", lst_missed.__len__())
+    if lst_missed.__len__() != 0:
+        for mis in lst_missed:
+            print("url = ", mis.link_to_download)
+            print("article code is -> ", mis.code)
+    else:
+        print("nothing is missed !")

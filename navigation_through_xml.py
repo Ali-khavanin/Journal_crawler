@@ -10,13 +10,12 @@ import os
 def get_Authors(path):
     Authors = []
     for author in path.findall('./AuthorList//Author'):
-
         Authors.append(
             Author(author.find('FirstName').text, author.find('LastName').text, author.find('Affiliation').text))
     return Authors
 
 
-articles: Article = []
+articles: Article = []  # after getting all articles from sina web or yekta web it would be saved in a pkl file
 
 
 def creat_articles(count_xmls: int, journalCode):
@@ -29,8 +28,8 @@ def creat_articles(count_xmls: int, journalCode):
         last_issue = 0
         for element in root.findall('.//Article'):
             link_to_download = element.find("ArchiveCopySource").text
-            volume = element.find('Journal/Volume').text
-            issue = element.find('Journal/Issue').text
+            volume = element.find('Journal/Volume').text.zfill(4)
+            issue = element.find('Journal/Issue').text.zfill(3)
             abstract = element.find('OtherAbstract').text
             title = element.find('ArticleTitle').text
             year = element.find('Journal/PubDate/Year').text
@@ -44,11 +43,12 @@ def creat_articles(count_xmls: int, journalCode):
                 print(author.find('FirstName').text + '   '
                       + author.find('LastName').text)
             print(abstract)
-            print(link_to_download + "----" + volume.zfill(3)
+            print(link_to_download + "----" + volume.zfill(4)
                   + '---------' + issue.zfill(3))
 
             articles.append(
-                Article(link_to_download, journalCode, volume, issue, str(number), get_Authors(element), abstract
+                Article(link_to_download, journalCode, volume, issue, str(number).zfill(2), get_Authors(element),
+                        abstract
                         , title, year))
 
     def save_articles_list():
