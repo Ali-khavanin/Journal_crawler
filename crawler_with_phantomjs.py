@@ -18,8 +18,11 @@ def get_issues_xml(web_url):
     driver.get(web_url)
     driver.maximize_window()
     links_total = len(driver.find_elements_by_xpath("//a[contains(@onclick, 'loadIssues')]"))
+    if not links_total:
+        return False
     print("all Volumes in this web page = ", str(links_total))
     i = 1
+
     for plus in driver.find_elements_by_xpath(
             "//a[contains(@onclick, 'loadIssues')]"):  # browser.find_elements_by_class_name("dv_archive_vol"):
         try:
@@ -27,7 +30,7 @@ def get_issues_xml(web_url):
                 print("Volume number  ", i, "is found ")
                 print("plus number ", i, " is NOT clicked cause it is a minus !  ")
                 i += 1
-                time.sleep(8)
+                time.sleep(10)
             else:
                 print(' i = ', i)
                 element = WebDriverWait(driver, 20).until(
@@ -56,12 +59,12 @@ def get_issues_xml(web_url):
     link_len = len(soup.findAll('div', {"class": "issue_dv"}))
 
     for ana in soup.findAll('div', {"class": "issue_dv"}):
-        print(ana)
+        # print(ana)
         c = c + 1
         Issues.append(ana)
 
-    for issue in Issues:
-        print("link = ", issue.find('a').get('href'))
+    # for issue in Issues:
+    #     print("link = ", issue.find('a').get('href'))
 
     # print("all issues count =  ", c)
     # print("web url is ... ", web_url)
@@ -81,12 +84,16 @@ def get_issues_xml(web_url):
 
     issue_number = 1
     for issue in Issues:
+        flag = True
+        time.sleep(20)
         path = "./"
         issue_link = issue.find('a').get('href')
         parse_object = urlparse(web_url)
         base_url = "http://" + parse_object.netloc
         corrected_url = urljoin(web_url, issue_link)
+
         issue_soup = BeautifulSoup(request.urlopen(corrected_url), 'html.parser')
+
         issue_xml = issue_soup.findAll("a", attrs={"title": "XML"}, href=True)  # finds the xml file
         print("Going to get : ", corrected_url)
         href = issue_xml[0].get('href')
@@ -101,6 +108,7 @@ def get_issues_xml(web_url):
 
     return issue_number
     # the range for furtther usage
+
 # issue_number = 1
 # for link in links:
 #     time.sleep(10)
@@ -128,3 +136,6 @@ def get_issues_xml(web_url):
 #         issue_number += 1
 #     print("the volume number ", str(volume_number), " is completely downloaded !",
 #           "\n ************************************************************************************")
+
+# count = get_issues_xml('http://ahj.kmu.ac.ir')
+# print(count)

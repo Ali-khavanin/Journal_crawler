@@ -20,7 +20,7 @@ for url in allURLS:
     coder += 1
 
 print("going to save the dict ...")
-save_obj(journalPapers_code, './journalPapers.pkl')
+save_obj(journalPapers_code, './journalPapersCode.pkl')
 print("dict is saved")
 # print(type(journalPapers_code))
 # print(get_key('http://ma.iaumajlesi.ac.ir'))

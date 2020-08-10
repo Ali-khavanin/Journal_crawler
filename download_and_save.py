@@ -1,6 +1,6 @@
 import requests
 import os
-from navigation_through_xml import articles
+
 import time
 
 lst_missed = []
@@ -20,7 +20,7 @@ def download_to(url: str, path: str):
         print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 
 
-def download_and_save_articls():
+def download_and_save_articls(articles):
     if not os.path.isdir('./0'):
         os.mkdir('./0')
     pth = './0/'

@@ -24,10 +24,8 @@ class Article:
         self.Abstract = abs
         self.title = ti
         self.year = y
-
-    def get_code(self):
+        self.SorY = '0'
         self.code = self.SorY.join('1700').join(self.volume).join(self.number)
-        return self.code
 
 
 class Author:
