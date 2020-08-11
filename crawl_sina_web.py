@@ -28,7 +28,7 @@ for jCode in journals_url:
         time.sleep(5)
         print("going to download newly added articles ! - >")
         time.sleep(4)
-        save_articles_list(articles)
+        save_articles_list()
         print("downloaded !!")
         time.sleep(5)
         print("___________________________________________")
