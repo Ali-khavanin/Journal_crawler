@@ -144,4 +144,4 @@ def get_issues_xml(web_url):
 #     print("the volume number ", str(volume_number), " is completely downloaded !",
 #           "\n ************************************************************************************")
 
-get_issues_xml('http://avj.smc.ac.ir/')
+# get_issues_xml('http://avj.smc.ac.ir/')
