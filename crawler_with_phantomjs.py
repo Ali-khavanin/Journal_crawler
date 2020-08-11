@@ -84,7 +84,7 @@ def get_issues_xml(web_url):
 
     issue_number = 1
     for issue in Issues:
-        flag = True
+
         time.sleep(20)
         path = "./"
         issue_link = issue.find('a').get('href')
@@ -100,23 +100,21 @@ def get_issues_xml(web_url):
         get_xml_url = urljoin(base_url, href)
         print('Directed to = > ', get_xml_url)
 
-        while i in range(1, 3):
+        with open(path + str(issue_number) + '.xml', 'wb') as file:
             try:
-                with open(path + str(issue_number) + '.xml', 'wb') as file:
-                    file.write(requests.get(get_xml_url).content, 'wb')
-                break
+                file.write(requests.get(get_xml_url).content)
+                print("xml file ", issue_number, " is downloaded")
             except Exception as exp:
+                print("there was a problem geting : ", issue_number, ".xml")
                 print(exp)
-                print("will try connection again in 60 second !")
-                time.sleep(60)
 
-        print("file ", issue_number, " is downloaded")
         issue_number += 1
         print(
             "__________________________________________________________________________________________________________")
 
     return issue_number
     # the range for furtther usage
+
 
 # issue_number = 1
 # for link in links:
@@ -146,5 +144,4 @@ def get_issues_xml(web_url):
 #     print("the volume number ", str(volume_number), " is completely downloaded !",
 #           "\n ************************************************************************************")
 
-# count = get_issues_xml('http://ahj.kmu.ac.ir')
-# print(count)
+get_issues_xml('http://avj.smc.ac.ir/')
