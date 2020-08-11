@@ -22,8 +22,6 @@ for jCode in journals_url:
         time.sleep(5)
         creat_articles(count, jCode)
 
-
-
         print("article set is updated !")
         print("Going to delete xml files - > ")
         delete_xmls(count)
