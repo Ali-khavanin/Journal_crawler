@@ -1,6 +1,6 @@
 import requests
 import os
-from navigation_through_xml import articles
+
 import time
 
 lst_missed = []

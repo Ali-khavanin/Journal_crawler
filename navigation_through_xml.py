@@ -15,10 +15,7 @@ def get_Authors(path):
     return Authors
 
 
-articles: list = []  # after getting all articles from sina web or yekta web it would be saved in a pkl file
-
-
-def creat_articles(count_xmls: int, journalCode):
+def creat_articles(count_xmls: int, journalCode, articles: list):
     number: int = 1
     for xml_number in range(1, count_xmls):
         try:
