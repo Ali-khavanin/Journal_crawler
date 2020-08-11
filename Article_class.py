@@ -26,7 +26,7 @@ class Article:
         self.title = ti
         self.year = y
         self.SorY = '0'
-        self.code = self.SorY.join('1700').join(self.volume).join(self.number)
+        self.code = self.SorY + self.JournalCode + self.volume + self.issue + self.number
 
 
 class Author:
