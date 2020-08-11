@@ -99,8 +99,17 @@ def get_issues_xml(web_url):
         href = issue_xml[0].get('href')
         get_xml_url = urljoin(base_url, href)
         print('Directed to = > ', get_xml_url)
-        with open(path + str(issue_number) + '.xml', 'wb') as file:
-            file.write(requests.get(get_xml_url).content)
+
+        while i in range(1, 3):
+            try:
+                with open(path + str(issue_number) + '.xml', 'wb') as file:
+                    file.write(requests.get(get_xml_url).content, 'wb')
+                break
+            except Exception as exp:
+                print(exp)
+                print("will try connection again in 60 second !")
+                time.sleep(60)
+
         print("file ", issue_number, " is downloaded")
         issue_number += 1
         print(

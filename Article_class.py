@@ -13,6 +13,7 @@ class Article:
     code = ""
     JournalCode = ""
     SorY = ""
+    is_downloaded = False
 
     def __init__(self, ltd, jc, v, i, c, auts, abs, ti, y):
         self.link_to_download = ltd
