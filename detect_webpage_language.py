@@ -4,10 +4,13 @@ from selenium import webdriver
 
 
 def get_webpage_lang(body_text):
-
     # url = "http://jh-per.halal.ac.ir/"
     # print(el.text)
-    print("the lang of this page is : ", detect(body_text))
-    if detect(body_text) == 'fa':
-        return True
-    return False
+
+    try:
+        if detect(body_text) == 'fa':
+            print("the lang of this page is : ", detect(body_text))
+            return True
+    except Exception as exp:
+        print("there was as problem : ", exp)
+        return False
