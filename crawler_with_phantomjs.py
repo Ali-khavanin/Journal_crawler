@@ -13,14 +13,15 @@ missed_xmls: list = []
 
 
 def get_issues_xml(web_url):
-    if not get_webpage_lang(web_url):
-        print("this journal is not in persian !!\n passing it ....")
-        return False
+
     driver = webdriver.PhantomJS(
         executable_path="C:/Users/khavaninzadeh/Desktop/phantomjs-2.1.1-windows/bin/phantomjs.exe")
-
-    Issues = []
     driver.get(web_url)
+    if not get_webpage_lang(driver.find_element_by_tag_name('body').text):
+        print("this journal is not in persian !!\n passing it ....")
+        return False
+    Issues = []
+
     driver.maximize_window()
     links_total = len(driver.find_elements_by_xpath("//a[contains(@onclick, 'loadIssues')]"))
     if not links_total:
