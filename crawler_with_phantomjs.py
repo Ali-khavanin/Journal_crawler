@@ -8,11 +8,14 @@ from urllib.parse import urlparse
 from urllib import request
 import time
 import requests
-
+from detect_webpage_language import get_webpage_lang
 missed_xmls: list = []
 
 
 def get_issues_xml(web_url):
+    if not get_webpage_lang(web_url):
+        print("this journal is not in persian !!\n passing it ....")
+        return False
     driver = webdriver.PhantomJS(
         executable_path="C:/Users/khavaninzadeh/Desktop/phantomjs-2.1.1-windows/bin/phantomjs.exe")
 
