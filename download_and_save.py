@@ -1,9 +1,12 @@
 import requests
 import os
-
+import pickle
 import time
 
-lst_missed = []
+
+def save_obj(obj, path):
+    with open(path, 'ab') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
 
 
 def download_to(url: str, path: str):
@@ -21,6 +24,7 @@ def download_to(url: str, path: str):
 
 
 def download_and_save_articls(articles):
+    lst_missed = []
     if not os.path.isdir('./0'):
         os.mkdir('./0')
     pth = './0/'
@@ -53,6 +57,7 @@ def download_and_save_articls(articles):
     print("Download ended !")
     print("number of missed articles = ", lst_missed.__len__())
     if lst_missed.__len__() != 0:
+        save_obj(lst_missed, "missed_articles.pkl")
         for mis in lst_missed:
             print("url = ", mis.link_to_download)
             print("article code is -> ", mis.code)

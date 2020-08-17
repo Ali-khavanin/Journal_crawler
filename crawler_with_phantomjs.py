@@ -9,6 +9,8 @@ from urllib import request
 import time
 import requests
 
+missed_xmls: list = []
+
 
 def get_issues_xml(web_url):
     driver = webdriver.PhantomJS(
@@ -43,6 +45,7 @@ def get_issues_xml(web_url):
                 i += 1
         except Exception as exc:
             print("something went wrong ! in Volume number : ", i)
+
             print(exc)
             i += 1
 
@@ -106,6 +109,11 @@ def get_issues_xml(web_url):
                 print("xml file ", issue_number, " is downloaded")
             except Exception as exp:
                 print("there was a problem geting : ", issue_number, ".xml")
+                print("going to save it in missed_xmls")
+                missed_xmls.append(get_xml_url)
+                with open('missed_xmls.txt', 'a') as missed_file:
+                    missed_file.writelines(get_xml_url)
+                    missed_file.write('\n')
                 print(exp)
 
         issue_number += 1
@@ -114,7 +122,6 @@ def get_issues_xml(web_url):
 
     return issue_number
     # the range for furtther usage
-
 
 # issue_number = 1
 # for link in links:

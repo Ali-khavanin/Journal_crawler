@@ -6,11 +6,9 @@ import time
 
 journals_url: dict = load_obj('./journalPapersCode.pkl')
 
-
+missed_journals: list = []
 
 article: list = []  # it is the list which contains all articles !
-
-
 
 for jCode in journals_url:
     print("*******************************************")
@@ -19,7 +17,12 @@ for jCode in journals_url:
 
     count = get_issues_xml(journals_url.get(jCode))
     if not count:
+        missed_journals.append(journals_url.get(jCode))
         print("this page is either in ENG or it has a diffrent format !! cant  be crawled")
+        print("url : ", journals_url.get(jCode), " is added to missed_journals")
+        with open('missed_journals.txt', "a") as missed_journals_file:
+            missed_journals_file.writelines(journals_url.get(jCode))
+            missed_journals_file.write('\n')
         print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
     else:
         print("xml files are downloaded !")
@@ -32,10 +35,10 @@ for jCode in journals_url:
         print("Going to delete xml files - > ")
         delete_xmls(count)
         time.sleep(5)
-        print("going to download newly added articles ! - >")
+        # print("going to download newly added articles ! - >")
         time.sleep(4)
-        download_and_save_articls(article)
-        print("downloaded !!")
+        # download_and_save_articls(article)
+        # print("downloaded !!")
         time.sleep(5)
         save_articles_list(article)
         print("pkl file is updated !")
