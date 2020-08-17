@@ -12,6 +12,6 @@ def get_webpage_lang(url):
     el = driver.find_element_by_tag_name('body')
     # print(el.text)
     print("the lang of this page is : ", detect(el.text))
-    if detect(el.text == 'fa'):
+    if detect(el.text) == 'fa':
         return True
     return False
