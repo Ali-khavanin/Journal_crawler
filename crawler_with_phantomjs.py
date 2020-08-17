@@ -24,6 +24,7 @@ def get_issues_xml(web_url):
 
     driver.maximize_window()
     links_total = len(driver.find_elements_by_xpath("//a[contains(@onclick, 'loadIssues')]"))
+
     if not links_total:
         return False
     print("all Volumes in this web page = ", str(links_total))
