@@ -99,9 +99,13 @@ def get_issues_xml(web_url):
         parse_object = urlparse(web_url)
         base_url = "http://" + parse_object.netloc
         corrected_url = urljoin(web_url, issue_link)
-
-        issue_soup = BeautifulSoup(request.urlopen(corrected_url), 'html.parser')
-
+        try:
+            issue_soup = BeautifulSoup(request.urlopen(corrected_url), 'html.parser')
+        except Exception as exp:
+            print("Banned ! adding this journal to missed list !")
+            with open("missed_journals.txt","a") as f:
+                f.write(web_url + ' \n')
+                return False
         issue_xml = issue_soup.findAll("a", attrs={"title": "XML"}, href=True)  # finds the xml file
         print("Going to get : ", corrected_url)
         href = issue_xml[0].get('href')
