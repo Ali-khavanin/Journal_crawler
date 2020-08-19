@@ -3,6 +3,7 @@ from Article_class import Article
 from Article_class import Author
 from save_load_pickle import save_obj
 import os
+from detect_webpage_language import is_persian
 
 
 # from crawler_with_phantomjs import issue_number
@@ -39,6 +40,11 @@ def creat_articles(count_xmls: int, journalCode, articles: list):
                     print("no Persian abstract found !")
                     abstract = ''
                 title = element.find('ArticleTitle').text
+                if not is_persian(title):
+                    try:
+                        title = element.find('VernacularTitle').text
+                    except:
+                        pass
                 year = element.find('Journal/PubDate/Year').text
                 # journalName = element.find
                 if last_issue != issue:

@@ -57,9 +57,11 @@ def download_and_save_articls(articles):
     print("Download ended !")
     print("number of missed articles = ", lst_missed.__len__())
     if lst_missed.__len__() != 0:
-        save_obj(lst_missed, "missed_articles.pkl")
-        for mis in lst_missed:
-            print("url = ", mis.link_to_download)
-            print("article code is -> ", mis.code)
+        with open("missed_pdfs.pkl", 'ab') as f:
+            pickle.dump(lst_missed, f, pickle.HIGHEST_PROTOCOL)
+
+            for mis in lst_missed:
+                print("url = ", mis.link_to_download)
+                print("article code is -> ", mis.code)
     else:
         print("nothing is missed !")

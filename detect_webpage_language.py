@@ -14,3 +14,12 @@ def get_webpage_lang(body_text):
     except Exception as exp:
         print("there was as problem : ", exp)
         return False
+
+
+def is_persian(txt):
+    try:
+        if detect(txt) == 'fa':
+            return True
+        return False
+    except Exception as exp:
+        return False
