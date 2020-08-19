@@ -9,11 +9,11 @@ from urllib import request
 import time
 import requests
 from detect_webpage_language import get_webpage_lang
+
 missed_xmls: list = []
 
 
 def get_issues_xml(web_url):
-
     driver = webdriver.PhantomJS(
         executable_path="C:/Users/khavaninzadeh/Desktop/phantomjs-2.1.1-windows/bin/phantomjs.exe")
     driver.get(web_url)
@@ -92,26 +92,26 @@ def get_issues_xml(web_url):
 
     issue_number = 1
     for issue in Issues:
-
-        time.sleep(20)
-        path = "./"
-        issue_link = issue.find('a').get('href')
-        parse_object = urlparse(web_url)
-        base_url = "http://" + parse_object.netloc
-        corrected_url = urljoin(web_url, issue_link)
         try:
-            issue_soup = BeautifulSoup(request.urlopen(corrected_url), 'html.parser')
-        except Exception as exp:
-            print("Banned ! adding this journal to missed list !")
-            with open("missed_journals.txt","a") as f:
-                f.write(web_url + ' \n')
-                return False
-        issue_xml = issue_soup.findAll("a", attrs={"title": "XML"}, href=True)  # finds the xml file
-        print("Going to get : ", corrected_url)
-        href = issue_xml[0].get('href')
-        get_xml_url = urljoin(base_url, href)
-        print('Directed to = > ', get_xml_url)
+            time.sleep(20)
+            path = "./"
+            issue_link = issue.find('a').get('href')
+            parse_object = urlparse(web_url)
+            base_url = "http://" + parse_object.netloc
+            corrected_url = urljoin(web_url, issue_link)
 
+            issue_soup = BeautifulSoup(request.urlopen(corrected_url), 'html.parser')
+
+            issue_xml = issue_soup.findAll("a", attrs={"title": "XML"}, href=True)  # finds the xml file
+            print("Going to get : ", corrected_url)
+            href = issue_xml[0].get('href')
+            get_xml_url = urljoin(base_url, href)
+            print('Directed to = > ', get_xml_url)
+        except Exception as exp:
+            print("an error occured : ", exp)
+            with open("missed_journals.txt", 'a') as file:
+                file.write(web_url + '\n')
+                return False
         with open(path + str(issue_number) + '.xml', 'wb') as file:
             try:
                 file.write(requests.get(get_xml_url).content)
